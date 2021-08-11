@@ -1,15 +1,14 @@
 public class PrimeSolution{
 
      public static void main(String []args){
-        ListPrimes();
+        int [] nums = new int [] {1, 2, 3, 6, 8, 12, 13, 15, 18, 19, 23, 103};
+        ListPrimes(nums);
      }
      
-     public static void ListPrimes() {
+     public static void ListPrimes(int [] numbers) {
          
          int divisorCounter = 0;
          int currentVal = 0;
-         
-         int []  numbers = new int [] {1, 2, 3, 6, 8, 12, 13, 15, 18, 19, 23, 103};
          
          for(int i=0; i < numbers.length; i++) {
              currentVal = numbers[i];
