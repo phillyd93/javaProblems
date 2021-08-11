@@ -1,0 +1,27 @@
+package com.vogella.junit5;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
+
+class PrimeTest {
+
+    Calculator calculator;
+
+    @BeforeEach                                         
+    void setUp() {
+        calculator = new Calculator();
+    }
+
+    @Test                                               
+    @DisplayName("Simple multiplication should work")   
+    void testPrimeList() {
+        int [] array1 = new int [] {1, 2, 3, 6, 8, 12, 13, 15, 18, 19, 23, 103};
+        int [] solution = new int[] {2, 3, 13, 19, 23, 103};
+        assertEquals(solution, ListPrimes(array1));     
+                 
+    }
+}
