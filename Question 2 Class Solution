@@ -1,0 +1,22 @@
+Public Class Employee {
+  private boolean managerFlag;
+  private String name;
+  private Date dateHired;
+  private int id;
+  private boolean isPartTime;
+  
+  public String getName() {
+  }
+  
+  public String getID() {
+  }
+  
+  public Date getDateHired() {
+  }
+  
+  public boolean isManager() {
+  }
+  
+  public boolean isPartTime() {
+  }
+}
